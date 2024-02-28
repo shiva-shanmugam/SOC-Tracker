@@ -1,0 +1,259 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0 10px;
+}
+  
+  input {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    float: right;
+  }
+
+  .note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 75%;
+    margin: 10px;
+    
+    float: right;
+    align-items: start;
+    justify-content: start;
+  }
+  .note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  .note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .note p p{
+    position: relative;
+    font-size: 0.8em;
+    float: right;
+    margin-bottom: 1px;
+    white-space: normal;
+    word-wrap: normal;
+  }
+
+  .check{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: right;
+  }
+
+  .note .field p{
+    position: relative;
+    margin-right: 10px;
+  } */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    background: #eee;
+    padding: 0 10px;
+    background-image: url(./assets/SOC\ TRACKER\ \(1\).png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+  }
+    
+    input {
+      position: relative;
+      text-align: center;
+      width: 50%;
+      float: right;
+    }
+    .outer-cover {
+      width: 100vw;
+    }
+
+    .outer-cover {
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .custom-offcanvas {
+      position: fixed;
+      top: 0;
+      right: -600px; 
+      height: 100%;
+      width: 600px;
+      background-color: #713ABE;
+      transition: right 0.3s ease-in-out;
+      z-index: 1050;
+  }
+  .custom-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1040;
+      display: none;
+  }
+    .note {
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 0 2px 5px #ccc;
+      padding: 10px;
+      margin: 10px;
+      align-items: start;
+      justify-content: start;
+    }
+    .cover-note {
+      width: 75%;
+    }
+    .button-note {
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+    }
+    .left-container {
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 0 2px 5px #ccc;
+      padding: 10px;
+      width: 25%;
+      margin: 3%;
+    }
+    .left-container p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .left-container h1 {
+      font-size: 3.1em;
+      margin-bottom: 6px;
+    }
+    .container-cover {
+      width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+
+    .note h1 {
+      font-size: 1.1em;
+      margin-bottom: 6px;
+    }
+    .note p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .note p p{
+      position: relative;
+      font-size: 0.8em;
+      float: right;
+      margin-bottom: 1px;
+      white-space: normal;
+      word-wrap: normal;
+    }
+  
+    .check{
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+      text-align: right;
+    }
+  
+    .note .field p{
+      position: relative;
+      margin-right: 10px;
+    }
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .column-1{
+      display: flex;
+      justify-content: start;
+      align-items: end;
+    }
+    .column {
+      width: 48%; 
+      padding: 1rem; 
+      box-sizing: border-box; 
+    }
+    .column-2{
+      display: flex;
+      justify-content: end;
+      align-items: start;
+    }
+/* .ticket-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+} */
+
+    .custom-nav-bg{
+      background-color: #f26f22;
+    }
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+      width: 80%;
+
+    }
+    .col-content{
+      display: flex; 
+      justify-content: space-between; 
+    }
+    
+    .modal-close-button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+    footer{
+      /* display: flex;
+      margin-top: 23%;
+      align-items: end;
+      justify-content: center; */
+      text-align: center; 
+      padding: 20px; 
+      color: #333;
+    }
+    .container{
+      margin-top: 10%;
+    }
+
+    .content{
+      flex-grow: 1;
+    }
